@@ -11,12 +11,13 @@ export function CTASection() {
   const [photo, setPhoto] = useState<File | null>(null)
   const [submitted, setSubmitted] = useState(false)
 
+  const SEND_URL = "https://functions.poehali.dev/21eb01ee-ca5d-4e23-8195-ff92e4f2c822"
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (name && phone) {
       try {
-        const func2url = await import("../../func2url.json")
-        await fetch(func2url.default["send-request"], {
+        await fetch(SEND_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ name, phone, description }),
