@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Выезд на дом",
+    description: "Мастер приедет к вам домой или в офис в удобное время. Не нужно никуда везти технику.",
+    icon: "car",
+    badge: "Удобно",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Диагностика бесплатно",
+    description: "Определяем причину поломки без предоплаты. Платите только за реальный ремонт.",
+    icon: "search",
+    badge: "Бесплатно",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Гарантия на работы",
+    description: "Даём гарантию на все выполненные работы и установленные запчасти до 6 месяцев.",
+    icon: "shield",
+    badge: "Гарантия",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
+    title: "Быстрое решение",
+    description: "Большинство проблем решаем за 1-2 часа прямо на месте. Без лишних ожиданий.",
     icon: "zap",
-    badge: "Умный",
+    badge: "Быстро",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Опытные мастера",
+    description: "Более 5 лет опыта в ремонте ПК, ноутбуков, материнских плат и переустановке Windows.",
+    icon: "user",
+    badge: "Профи",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Честные цены",
+    description: "Называем стоимость до начала работ. Без скрытых платежей и накруток за срочность.",
+    icon: "tag",
+    badge: "Выгодно",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="services" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Почему выбирают нас</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Ремонт компьютеров в Новосибирске с выездом на дом — быстро, профессионально и с гарантией
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "car" && "🚗"}
+                    {feature.icon === "search" && "🔍"}
+                    {feature.icon === "shield" && "🛡️"}
+                    {feature.icon === "zap" && "⚡"}
+                    {feature.icon === "user" && "👨‍🔧"}
+                    {feature.icon === "tag" && "💰"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}

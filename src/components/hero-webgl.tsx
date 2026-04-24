@@ -114,8 +114,8 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "Synapse AI".split(" ")
-  const subtitle = "Нейроинтерфейсы нового поколения."
+  const titleWords = "ПК Мастер".split(" ")
+  const subtitle = "Ремонт компьютеров на выезд в Новосибирске. Быстро, надёжно, с гарантией."
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])
@@ -145,8 +145,8 @@ export const Hero3DWebGL = () => {
         <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-black to-transparent" />
       </div>
 
-      <div className="h-screen uppercase items-center w-full absolute z-[60] pointer-events-none px-10 flex justify-center flex-col">
-        <div className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold font-orbitron">
+      <div className="h-screen uppercase items-center w-full absolute z-[60] px-10 flex justify-center flex-col">
+        <div className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold font-orbitron pointer-events-none">
           <div className="flex space-x-2 lg:space-x-6 overflow-hidden text-white">
             {titleWords.map((word, index) => (
               <div
@@ -162,7 +162,7 @@ export const Hero3DWebGL = () => {
             ))}
           </div>
         </div>
-        <div className="text-xs md:text-xl xl:text-2xl 2xl:text-3xl mt-2 overflow-hidden text-white font-bold max-w-4xl mx-auto text-center px-4">
+        <div className="text-xs md:text-xl xl:text-2xl 2xl:text-3xl mt-2 overflow-hidden text-white font-bold max-w-4xl mx-auto text-center px-4 pointer-events-none normal-case">
           <div
             className={subtitleVisible ? "fade-in-subtitle" : ""}
             style={{
@@ -172,6 +172,18 @@ export const Hero3DWebGL = () => {
           >
             {subtitle}
           </div>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 mt-8 normal-case">
+          <a href="tel:+73832000000">
+            <button className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-200 pulse-button">
+              📞 Позвонить сейчас
+            </button>
+          </a>
+          <a href="#request">
+            <button className="flex items-center gap-2 border-2 border-red-500 text-white hover:bg-red-500 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-200">
+              📋 Оставить заявку
+            </button>
+          </a>
         </div>
       </div>
 
