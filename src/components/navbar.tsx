@@ -80,6 +80,13 @@ export function Navbar() {
                 Как работаем
               </a>
               <a
+                href="#price"
+                className="block px-3 py-2 font-geist text-white hover:text-red-500 transition-colors duration-200"
+                onClick={() => setIsOpen(false)}
+              >
+                Цены
+              </a>
+              <a
                 href="#reviews"
                 className="block px-3 py-2 font-geist text-white hover:text-red-500 transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
