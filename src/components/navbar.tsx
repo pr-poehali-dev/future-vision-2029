@@ -39,7 +39,7 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <a href="tel:+73832000000">
+            <a href="tel:+79538077431">
               <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">
                 <Icon name="Phone" size={16} />
                 Позвонить
@@ -91,7 +91,7 @@ export function Navbar() {
                 Вопросы
               </a>
               <div className="px-3 py-2">
-                <a href="tel:+73832000000">
+                <a href="tel:+79538077431">
                   <Button className="w-full bg-red-500 hover:bg-red-600 text-white font-geist border-0">
                     <Icon name="Phone" size={16} />
                     Позвонить

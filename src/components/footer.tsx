@@ -13,9 +13,9 @@ export function Footer() {
             <p className="font-space-mono text-gray-300 mb-6 max-w-md">
               Ремонт компьютеров с выездом на дом в Новосибирске. Быстро, честно, с гарантией.
             </p>
-            <a href="tel:+73832000000" className="flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors font-bold text-lg">
+            <a href="tel:+79538077431" className="flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors font-bold text-lg">
               <Icon name="Phone" size={20} />
-              +7 (383) 200-00-00
+              +7 (953) 807-74-31
             </a>
           </div>
 

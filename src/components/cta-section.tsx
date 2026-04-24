@@ -11,9 +11,19 @@ export function CTASection() {
   const [photo, setPhoto] = useState<File | null>(null)
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (name && phone) {
+      try {
+        const func2url = await import("../../func2url.json")
+        await fetch(func2url.default["send-request"], {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, phone, description }),
+        })
+      } catch (_e) {
+        console.error(_e)
+      }
       setSubmitted(true)
     }
   }
@@ -104,12 +114,12 @@ export function CTASection() {
           <div className="space-y-6">
             <div className="bg-card rounded-2xl border border-red-500/20 p-6">
               <h3 className="text-xl font-bold text-white mb-4">Или позвоните нам</h3>
-              <a href="tel:+73832000000" className="flex items-center gap-3 group">
+              <a href="tel:+79538077431" className="flex items-center gap-3 group">
                 <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
                   <Icon name="Phone" size={24} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-white group-hover:text-red-400 transition-colors">+7 (383) 200-00-00</p>
+                  <p className="text-2xl font-bold text-white group-hover:text-red-400 transition-colors">+7 (953) 807-74-31</p>
                   <p className="text-gray-400 text-sm">Ежедневно с 9:00 до 21:00</p>
                 </div>
               </a>
