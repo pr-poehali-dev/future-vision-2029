@@ -42,16 +42,16 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section id="services" className="py-24 px-6 bg-background">
+    <section id="services" className="py-12 sm:py-24 px-4 sm:px-6 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Почему выбирают нас</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 font-sans">Почему выбирают нас</h2>
+          <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Ремонт компьютеров в Новосибирске с выездом на дом — быстро, профессионально и с гарантией
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
           {features.map((feature, index) => (
             <Card
               key={index}

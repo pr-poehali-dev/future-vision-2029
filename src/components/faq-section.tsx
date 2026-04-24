@@ -35,11 +35,11 @@ export function FAQSection() {
   ]
 
   return (
-    <section id="faq" className="py-24 bg-black">
+    <section id="faq" className="py-12 sm:py-24 bg-black">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-orbitron">Частые вопросы</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-space-mono">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 font-orbitron">Частые вопросы</h2>
+          <p className="text-base sm:text-xl text-gray-300 max-w-3xl mx-auto font-space-mono">
             Ответы на самые популярные вопросы о нашем сервисе по ремонту ПК с выездом в Новосибирске.
           </p>
         </div>
@@ -47,8 +47,8 @@ export function FAQSection() {
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-red-500/20 mb-4">
-                <AccordionTrigger className="text-left text-lg font-semibold text-white hover:text-red-400 font-orbitron px-6 py-4">
+              <AccordionItem key={index} value={`item-${index}`} className="border-red-500/20 mb-3 sm:mb-4">
+                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold text-white hover:text-red-400 font-orbitron px-4 sm:px-6 py-3 sm:py-4">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300 leading-relaxed px-6 pb-4 font-space-mono">

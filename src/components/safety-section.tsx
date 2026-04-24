@@ -18,16 +18,16 @@ export function SafetySection() {
   ]
 
   return (
-    <section id="gallery" className="py-24 bg-background">
+    <section id="gallery" className="py-12 sm:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Наша работа</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 font-sans">Наша работа</h2>
+          <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Мы работаем профессионально и аккуратно — ваш компьютер в надёжных руках
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {photos.map((photo, index) => (
             <div
               key={index}

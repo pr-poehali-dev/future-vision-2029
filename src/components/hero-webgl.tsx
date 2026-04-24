@@ -173,14 +173,14 @@ export const Hero3DWebGL = () => {
             {subtitle}
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-4 mt-8 normal-case">
-          <a href="tel:+73832000000">
-            <button className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-200 pulse-button">
+        <div className="flex flex-col sm:flex-row gap-3 mt-6 normal-case w-full max-w-sm sm:max-w-none">
+          <a href="tel:+79538077431" className="w-full sm:w-auto">
+            <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-all duration-200 pulse-button">
               📞 Позвонить сейчас
             </button>
           </a>
-          <a href="#request">
-            <button className="flex items-center gap-2 border-2 border-red-500 text-white hover:bg-red-500 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-200">
+          <a href="#request" className="w-full sm:w-auto">
+            <button className="w-full sm:w-auto flex items-center justify-center gap-2 border-2 border-red-500 text-white hover:bg-red-500 font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-all duration-200">
               📋 Оставить заявку
             </button>
           </a>

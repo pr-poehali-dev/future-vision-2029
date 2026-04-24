@@ -30,18 +30,18 @@ export function CTASection() {
   }
 
   return (
-    <section id="request" className="py-24 px-6 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10">
+    <section id="request" className="py-12 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12 slide-up">
-          <h2 className="text-5xl font-bold text-foreground mb-6 font-sans text-balance">
+        <div className="text-center mb-8 sm:mb-12 slide-up">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6 font-sans text-balance">
             Оставить заявку на ремонт
           </h2>
-          <p className="text-xl text-muted-foreground mb-4 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-muted-foreground mb-4 leading-relaxed max-w-2xl mx-auto">
             Опишите проблему, и мастер свяжется с вами в течение 15 минут. Выезд в любой район Новосибирска.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-start">
           {/* Форма заявки */}
           <div>
             {submitted ? (
@@ -51,7 +51,7 @@ export function CTASection() {
                 <p className="text-gray-300">Мастер позвонит вам в течение 15 минут</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4 bg-card p-8 rounded-2xl border border-red-500/20">
+              <form onSubmit={handleSubmit} className="space-y-4 bg-card p-5 sm:p-8 rounded-2xl border border-red-500/20">
                 <div>
                   <label className="text-white text-sm font-medium mb-2 block">Ваше имя *</label>
                   <Input
