@@ -28,6 +28,9 @@ export function Navbar() {
               <a href="#how-it-works" className="font-geist text-white hover:text-red-500 transition-colors duration-200">
                 Как работаем
               </a>
+              <a href="#price" className="font-geist text-white hover:text-red-500 transition-colors duration-200">
+                Цены
+              </a>
               <a href="#reviews" className="font-geist text-white hover:text-red-500 transition-colors duration-200">
                 Отзывы
               </a>
